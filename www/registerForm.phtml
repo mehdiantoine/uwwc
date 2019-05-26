@@ -1,0 +1,45 @@
+
+<main class="container">
+    <header class="header-form-register">
+        <h1 class="title-item">Please sign in then get the chance to elect a new worst Champion!</h1>
+    </header>
+
+    <?php if (!empty($register_error)): ?>
+        <p class="advert"><?= $register_error ?></p>
+    <?php endif ?>
+
+    <?php if (!empty($register_success)): ?>
+        <p class="advert"><?= $register_success ?></p>
+    <?php endif ?>
+
+    <?php if (!empty($addError)): ?>
+        <p class="advert"><?= $addError ?></p>
+    <?php endif ?>
+
+    <form method="POST" action="register.php" class="item-form primary-form"  id="registerForm">
+        <fieldset>
+            <legend class="register-form">Signing Up Form</legend>
+            <ul>
+                <li>
+                    <label for="user">User's name</label>
+                    <input type="text" id="dataUser" data-login name="user" value="" required>
+                </li>
+                <li>
+                    <label for="user2">Confirm user's name</label>
+                    <input type="text" value="" name="user2" required>
+                </li>
+                <li>
+                    <label for="password">Your Password</label>
+                    <input type="password" id="dataPassword" data-password value="" name="password" required>
+                </li>
+                <li>
+                    <label for="password2">Confirm password</label>
+                    <input type="password" value="" name="password2" required>
+                </li>
+                <li>
+                    <button type="submit" name="register_btn" class="btn-submit">Register!</button>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</main>

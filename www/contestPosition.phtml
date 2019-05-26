@@ -1,0 +1,25 @@
+<main class="container contest-container">
+    <h1 class="title-contest">Contest Position</h1>
+
+    <?php if (!empty($alreadyVoted)): ?>
+        <p class="advert"><?= $alreadyVoted ?></p>
+    <?php endif ?>
+
+    <?php if (!empty($successVote)): ?>
+        <p class="advert"><?= $successVote ?></p>
+    <?php endif ?>
+
+    <?php foreach ($candidatesByVotes as $candidate): ?>
+
+    <article class="item-votes">
+        <a href="nominations.php?nomination_id=<?=$candidate['nomination_id']?>" class="to-nomination">
+            <h3 class="title-main" title="click here to vote">
+                <?= $candidate['firstname'] ?> <?= $candidate['lastname'] ?>
+            </h3>
+        </a>
+        <p class="vote-counter"><?= $candidate['vote_count'] ?></p>
+    </article>
+
+    <?php endforeach ?>
+
+</main>

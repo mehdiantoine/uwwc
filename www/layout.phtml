@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UWWC - <?= $template ?></title>
+    <!-- *CSS* -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Sree+Krushnadevaraya" rel="stylesheet">
+    <link rel="stylesheet" href="www/css/main.css">
+
+    <!-- Librairie jQuery -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!--  *JavaScript*  -->
+    <script src="www/js/ajaxRegisterToLogin.js"></script>
+    <script src="www/js/main.js"></script>
+</head>
+<body>
+    <header class="header-main">
+        <nav class="nav-header">
+            <ul>
+
+            <?php session_start();
+            if (isset($_SESSION['user_name']) && isset($_SESSION['password'])): ?>
+
+                <li>
+                    <a href="#" id="menu" class="title-header-main">
+                        <?= $_SESSION['user_name'] ?>
+                    </a>
+                </li>
+                <li>
+                    <a href="logout.php" class="title-header-main">Sign out</a>
+                </li>
+
+            <?php else: ?>
+
+                <li>
+                    <a href="#" class="title-header-main">Universe's Worst</a>
+                </li>
+                <li>
+                    <a href="#" id="menu" class="title-header-main">Wasteman Contest</a>
+                </li>
+
+            <?php endif ?>
+<!--                <div class="responsive-menu">-->
+                <li>
+                    <a href="candidates.php" class="hidden nav-menu">Candidates list</a>
+                </li>
+                <li>
+                    <a href="addCandidate.php" class="hidden nav-menu">Add a new Candidate</a>
+                </li>
+                <li>
+                    <a href="nominations.php" class="hidden nav-menu">Nominations list</a>
+                </li>
+                <li>
+                    <a href="addNomination.php" class="hidden nav-menu">Add a nomination</a>
+                </li>
+                <li>
+                    <a href="voteCount.php" class="hidden nav-menu">Contest Position</a>
+                </li>
+                <li>
+                    <a href="register.php" class="hidden nav-menu">Sign up</a>
+                </li>
+<!--                </div>-->
+            </ul>
+        </nav>
+    </header>
+
+        <?php include_once $template.".phtml" ?>
+
+    <footer class="footer-signature"><p>Mehdi A. Chikh Ltd Co - 2019</p></footer>
+</body>
+</html>

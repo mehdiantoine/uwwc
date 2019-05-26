@@ -1,0 +1,88 @@
+<main class="container">
+    <header class="header-form">
+
+        <?php if(!empty($addError)): ?>
+                <p class="advert"><?= $addError ?></p>
+        <?php endif ?>
+
+        <?php if(!empty($success)): ?>
+                <p class="advert"><?= $success ?></p>
+        <?php endif ?>
+
+        <?php if(!empty($addImgError)): ?>
+            <p class="advert"><?= $addImgError ?>
+        <?php endif ?>
+
+        <?php if(!empty($sizeImgError)): ?>
+            <p class="advert"><?= $sizeImgError ?></p>
+        <?php endif ?>
+
+        <?php if(!empty($uploadSuccess)): ?>
+            <p class="advert"><?= $uploadSuccess ?></p>
+        <?php endif ?>
+
+        <h1 class="title-header-form">Add your ideal candidate:</h1>
+        <p class="description">Candidates will be added to a waiting list before being nominated eventually.</p>
+        <p class="description">This is your opportunity to speak up for what you actually think of 'celebrities'.</p>
+        <p class="description"> Vote for the most miserable person or fictional character you've ever known then give them the chance to win one of the most important election gig in the whole Universe!</p>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias debitis dolor doloremque id minus nihil nobis obcaecati, quae, repellendus sunt, tempore vitae voluptatibus. A cumque laborum maxime quas voluptas.</p>
+        <p class="description"> They could be good for a laugh at least!</p>
+        <button class="btn-submit">
+            <i class="fas fa-arrow-down"></i>
+                show me the form!
+            <i class="fas fa-arrow-down"></i>
+        </button>
+    </header>
+
+    <?php if(isset($_SESSION['user_name']) && isset($_SESSION['password'])): ?>
+
+    <form method="post" action="addCandidate.php" class="form" enctype="multipart/form-data">
+        <fieldset class="primary-form">
+            <legend class="legend-form">Primary Election</legend>
+            <ul class="item-form">
+                <li>
+                    <label for="firstname">Firstname :</label>
+                    <input id="firstname" name="firstname" value="">
+                    <label for="lastname">Lastname :</label>
+                    <input id="lastname" name="lastname" value="">
+                </li>
+                <li>
+                    <label for="ageCandidate">Candidate's age :
+                        <select name="ageCandidate">
+
+                            <?php for( $age=7; $age < 77; $age++): ?>
+                                <option value="<?= $age ?>"><?= $age ?></option>
+                            <?php endfor ?>
+
+                        </select>
+                    </label>
+                </li>
+                <li>
+                    <label for="candidate_img">Picture: (Max: 500KB/Ko)</label>
+                    <input type="hidden" name="MAX_FILE_SIZE" value="49316">
+                    <input type="file" name="candidate_img" accept="image/png, image/jpeg" class="imgInput">
+                </li>
+                <li>
+                    <label for="nationality" >Nationality :</label>
+                    <input id="nationality" name="nationality">
+                    <label for="job">Function :</label>
+                    <input id="job" name="job">
+                </li>
+                <li>
+                    <label for="description">Reason Why?</label>
+                    <textarea id="description" name="description" rows="10" cols="33">no comments</textarea>
+                </li>
+                <li>
+                    <button class="btn-submit" name="addCandidate" type="submit">Add candidate</button>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+
+    <?php else: ?>
+        <div class="btn-sign-container">
+            <a href="login.php" class="btn-sign is-showing">Sign in here!</a>
+        </div>
+    <?php endif ?>
+
+</main>

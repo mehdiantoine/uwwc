@@ -1,0 +1,31 @@
+<main class="container">
+
+    <?php if(!empty($addError)): ?>
+        <p class="advert"><?= $addError ?></p>
+    <?php endif ?>
+
+    <?php if(!empty($success)): ?>
+        <p class="advert"><?= $success ?></p>
+    <?php endif ?>
+
+    <form method="post" action="addNomination.php">
+        <fieldset class="primary-form">
+            <legend class="legend-form">New Nomination</legend>
+            <ul class="item-form">
+                <li>
+                    <label for="title">Title :
+                        <input id="title" name="title" value=""> one
+                    </label>
+                </li>
+                <li>
+                    <label for="description">Description :
+                        <textarea id="description" name="description" rows="10" cols="33"></textarea>
+                    </label>
+                </li>
+                <li>
+                    <button class="btn-submit" id="addNomination" name="addNomination" type="submit">Add nomination</button>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</main>

@@ -1,0 +1,17 @@
+<main class="container item">
+    <h2 class="title-main">Here are the nominations of the Worst Wasteman Contest</h2>
+
+    <?php foreach ($nominations as $nomination):?>
+
+    <article class="item-inner">
+        <a href="nominations.php?nomination_id=<?=$nomination['id']?>" class="title-nomination">
+            <h3 class="title-item"><?= $nomination['title']?></h3>
+        </a>
+        <p class="description"> <?= $nomination['description'] ?></p>
+        <p class="description"> <?= $nomination['postedDate'] ?></p>
+    </article>
+
+    <?php endforeach ?>
+
+</main>
+

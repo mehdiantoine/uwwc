@@ -1,0 +1,71 @@
+<main class="container item">
+    <form method="post" action="candidates.php" class="form-search">
+        <label for="firstname_search">Firstname</label>
+        <input type="search" name="firstname_search" value="">
+        <label for="lastname_search">Lastname</label>
+        <input type="search" name="lastname_search" value="">
+        <button type="submit" name="search_submit" class="btn-submit">Search</button>
+    </form>
+
+    <?php foreach ($candidates as $candidate): ?>
+
+    <article class="item-inner">
+        <h2 class="title-item"><?=$candidate['firstname']?> <?=$candidate['lastname']?></h2>
+
+        <?php if(isset($_SESSION['user_name']) && $_SESSION['password']): ?>
+            <?php if (!empty($candidate['candidate_img_name'])): ?>
+
+                <img src="uploads/<?=$candidate['candidate_img_name'] ?>" alt="<?= $candidate['candidate_img_name'] ?>">
+
+            <?php else: ?>
+
+                <form class="update-form" action="updateImgCandidate.php" method="post">
+                    <label for="candidate_img">Picture: (Max: 500KB/Ko)</label>
+                    <input type="hidden" name="MAX_FILE_SIZE" value="49316">
+                    <input type="file" name="candidate_img" accept="image/png, image/jpeg" class="imgInput">
+                    <button name="" class="btn-submit">
+                        <a href="updateImgCandidate.php?candidate_id=<?= $candidate['id'] ?>">
+                            Add up an picture
+                        </a>
+                    </button>
+                </form>
+
+            <?php endif ?>
+        <?php else: ?>
+
+            <a href="login.php" class="btn-sign">Pick another picture!</a>
+
+        <?php endif ?>
+
+        <a href="nominations.php?nomination_id=<?=$candidate['nomination_id']?>" id="candidate" title="Click here to vote!">
+            <h3 class="title-nomination">
+            <!-- nomination 'title' by candidate -->
+                <?= $candidate['title'] ?>
+            </h3>
+            <h4 class="vote-counter"><?= $candidate['vote_count'] ?></h4>
+        </a>
+        <p class="age-candidate"><?=$candidate['age']?> years old</p>
+        <p class="nationality">From: <?=$candidate['nationality']?></p>
+        <p class="job">Function: <?= $candidate['job']?></p>
+        <p class="description">Reasons why they're here: <?=$candidate['description']?></p>
+        <form method="post" action="candidates.php">
+            <!-- hidden <input> to specify what nomination goes along which candidate -->
+            <input type="hidden" name="candidate_id" value="<?= $candidate['id'] ?>">
+
+            <label for="nominated">Select Nomination</label>
+            <select name="nomination_id" id="nominated">
+
+                <?php foreach ($nominations as $nomination): ?>
+
+                <option value="<?= $nomination['id']?>"><?= $nomination['title']?></option>
+
+                <?php endforeach ?>
+
+            </select>
+            <button type="submit" name="nominationSelect" class="btn-submit">nominate now!</button>
+        </form>
+    </article>
+
+    <?php endforeach ?>
+
+</main>

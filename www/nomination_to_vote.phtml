@@ -1,0 +1,38 @@
+
+<main class="container">
+    <article class="item">
+        <ul class="list-title-nomination">
+            <li>
+                <h2 class="title-nomination"><?=$nomination['title'] ?></h2>
+            </li>
+            <li>
+                <h3 class="title-nomination">Candidates in list</h3>
+            </li>
+        </ul>
+            <?php foreach ($candidates as $candidate): ?>
+        <ul class="item-to-vote">
+
+            <li>
+                <h4><?= $candidate['lastname']?> <?= $candidate['firstname']?></h4>
+            </li>
+
+            <?php if(isset($_SESSION['user_name']) && isset($_SESSION['password'])): ?>
+
+            <li>
+                <a href="voteCount.php?vote_id=<?= $candidate['id']?>" class="btn-submit btnVote">vote for him!</a>
+            </li>
+
+            <?php else: ?>
+
+            <li>
+                <a href="login.php" class="btn-sign">Sign in here to vote!</a>
+            </li>
+
+            <?php
+                endif;
+                endforeach
+            ?>
+
+        </ul>
+    </article>
+</main>

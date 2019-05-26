@@ -1,0 +1,31 @@
+<main class="container">
+    <form action="login.php" method="post" id="loginForm">
+        <fieldset class="primary-form">
+        <legend class="legend-form">Connection form</legend>
+            <ul class="item-form">
+                <li>
+                    <label for="user">Your login</label>
+                    <input type="text" name="user" id="user">
+                </li>
+                <li>
+                    <label for="password">Your password</label>
+                    <input id="password" type="password" name="password">
+                </li>
+                <li>
+                    <button type="submit" name="login_submit" class="btn-submit">
+                        Connection
+                    </button>
+                </li>
+            </ul>
+        </fieldset>
+
+        <?php if (!empty($loginFailed)): ?>
+            <p class="login-error"><?= $loginFailed ?></p>
+        <?php endif ?>
+
+        <?php if (!empty($ajaxLoginError)): ?>
+            <p class="login-error"><?= $ajaxLoginError ?></p>
+        <?php endif ?>
+
+    </form>
+</main>
