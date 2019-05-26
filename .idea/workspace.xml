@@ -5,7 +5,11 @@
     <bookmark url="file://$PROJECT_DIR$/www/nominationsView.phtml" line="6" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8397769e-a265-4b4b-9999-0a5004932aa0" name="Default Changelist" comment="" />
+    <list default="true" id="8397769e-a265-4b4b-9999-0a5004932aa0" name="Default Changelist" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -121,11 +125,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+          <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/www/css/main.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.23216188">
-                  <caret line="109" column="37" selection-start-line="109" selection-start-column="37" selection-end-line="109" selection-end-column="37" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="206" column="5" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="5" />
                   <folding>
                     <marker date="1558812298766" expanded="true" signature="959:965" placeholder="{...}" />
                   </folding>
@@ -133,10 +137,20 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/README.md">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.23003195">
+                  <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-2.2857144">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
                   <folding />
                 </state>
@@ -146,7 +160,7 @@
           <file leaf-file-name="database.class.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/models/database.class.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.5714286">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
                   <folding />
                 </state>
@@ -156,7 +170,7 @@
           <file leaf-file-name="sqlconnect.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/models/sqlconnect.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-4.571429">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
                   <folding />
                 </state>
@@ -190,7 +204,7 @@
           <file leaf-file-name="addCandidate.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/addCandidate.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-30.857143">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
                   <folding>
                     <marker date="1558789692780" expanded="true" signature="705:840" placeholder="SELECT first..candidates..." />
@@ -211,11 +225,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="candidates_list.phtml" pinned="false" current-in-tab="false">
+          <file leaf-file-name="candidates_list.phtml" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/www/candidates_list.phtml">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+                <state vertical-scroll-proportion="0.36601308">
+                  <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
                   <folding />
                 </state>
               </provider>
@@ -266,10 +280,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="layout.phtml" pinned="false" current-in-tab="true">
+          <file leaf-file-name="layout.phtml" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/www/layout.phtml">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.88235295">
+                <state vertical-scroll-proportion="-41.714287">
                   <caret line="73" column="68" selection-start-line="73" selection-start-column="68" selection-end-line="73" selection-end-column="68" />
                   <folding />
                 </state>
@@ -298,10 +312,12 @@
       <replace>user</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/340689db-9fcd-45b0-9b80-f78c783eb3c9/console_5.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/340689db-9fcd-45b0-9b80-f78c783eb3c9/console_6.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/340689db-9fcd-45b0-9b80-f78c783eb3c9/console_7.sql" />
         <option value="$PROJECT_DIR$/www/addCandidateView.phtml" />
@@ -352,6 +368,7 @@
         <option value="$PROJECT_DIR$/www/layout.phtml" />
         <option value="$PROJECT_DIR$/www/layout.phtml" />
         <option value="$PROJECT_DIR$/www/css/main.css" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -372,7 +389,7 @@
     <option name="width" value="1928" />
     <option name="height" value="1060" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -591,7 +608,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1928" height="1060" extended-state="7" />
+    <frame x="-4" y="-4" width="1928" height="1060" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.083333336" sideWeight="0.4943005" order="0" side_tool="false" content_ui="combo" />
@@ -635,14 +652,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/candidates_list.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/loginForm.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -926,14 +935,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/candidates_list.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/registerForm.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -996,14 +997,14 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/d246452a/340689db-9fcd-45b0-9b80-f78c783eb3c9/universes_worst_wasteman..users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1017,7 +1018,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2857144">
+        <state vertical-scroll-proportion="0.0">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
@@ -1025,7 +1026,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/database.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5714286">
+        <state vertical-scroll-proportion="0.0">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
@@ -1033,7 +1034,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/addCandidate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-30.857143">
+        <state vertical-scroll-proportion="0.0">
           <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
           <folding>
             <marker date="1558789692780" expanded="true" signature="705:840" placeholder="SELECT first..candidates..." />
@@ -1045,7 +1046,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/sqlconnect.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.571429">
+        <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
@@ -1053,19 +1054,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/layout.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.88235295">
+        <state vertical-scroll-proportion="-41.714287">
           <caret line="73" column="68" selection-start-line="73" selection-start-column="68" selection-end-line="73" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/candidates_list.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36601308">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23216188">
-          <caret line="109" column="37" selection-start-line="109" selection-start-column="37" selection-end-line="109" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="206" column="5" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="5" />
           <folding>
             <marker date="1558812298766" expanded="true" signature="959:965" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23003195">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
